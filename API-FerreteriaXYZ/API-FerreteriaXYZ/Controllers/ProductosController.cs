@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using API_FerreteriaXYZ.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using API_FerreteriaXYZ.Models;
+using NuGet.Protocol;
 
 namespace API_FerreteriaXYZ.Controllers
 {
@@ -19,81 +16,78 @@ namespace API_FerreteriaXYZ.Controllers
         {
             _context = context;
         }
-
-        // GET: api/Productos
-        [HttpGet]
-        public IActionResult Get()
+        /// <summary>
+        /// Crear productos
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /CreateProduct
+        ///     {
+        ///        "nombre": "Destornillador Estrella",
+        ///        "valorUnitario": 15000,
+        ///        "unidadCodigo": 2,
+        ///        "peso": 23,
+        ///        "volumenEmpaque": 23,
+        ///        "fechaCreacion": "2023-04-12T17:54:20.028Z",
+        ///        "idEstado": 1
+        ///     }
+        ///
+        /// </remarks>
+        // POST: api/CreateProduct
+        [HttpPost("CreateProduct")]
+        public IActionResult CrearProducto([FromBody] Producto objProducto)
         {
-            List<Producto> lista = new List<Producto>();
+
             try
             {
-                lista = _context.Productos.ToList();
-                return StatusCode(StatusCodes.Status200OK, new { lista });
+                _context.Productos.Add(objProducto);
+                _context.SaveChanges();
+                return StatusCode(StatusCodes.Status200OK, new { message = "ok", resultado = objProducto });
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status200OK, new { ex.Message });
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = ex.Message });
             }
         }
-
-        // GET: api/Productos/5
-        [HttpGet("{id}")]
-        public IActionResult Obtener(int id)
+        /// <summary>
+        /// Obtener la lista de Productos
+        /// </summary>
+        /// <returns></returns>
+        // GET: api/GetAllProductos
+        [HttpGet("GetAllProductos")]
+        public IActionResult GetAllProductos()
         {
-            Producto objProducto = _context.Productos.Find(id);
-            if (objProducto == null)
-            {
-                return BadRequest("No se encontro el producto");
-            }
+            List<Producto> listProductos = new List<Producto>();
             try
             {
-                objProducto = _context.Productos.FirstOrDefault(m => m.Codigo == id);
-                return StatusCode(StatusCodes.Status200OK, new { objProducto });
+                listProductos = _context.Productos.Include(c => c.IdEstadoNavigation).Include(c=> c.UnidadCodigoNavigation).ToList();
+                return StatusCode(StatusCodes.Status200OK, new { message = "ok", resultado = listProductos }); ;
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status200OK, new { ex.Message });
+                return StatusCode(StatusCodes.Status200OK, new { message = ex.Message, resultado = listProductos }); ;
             }
-
         }
-
-        // POST: api/Productos
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Producto>> PostProducto(Producto producto)
+        // GET: api/GetProduct{id}
+        [HttpGet("GetProduct{id}")]
+        public IActionResult GetProduct(int id)
         {
-          if (_context.Productos == null)
-          {
-              return Problem("Entity set 'DbFerreteriaContext.Productos'  is null.");
-          }
-            Console.WriteLine(producto);
-
-            return CreatedAtAction("GetProducto", new { id = producto.Codigo }, producto);
-        }
-
-        // DELETE: api/Productos/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProducto(int id)
-        {
+            Producto objProducto = new Producto();
             if (_context.Productos == null)
             {
-                return NotFound();
+                return StatusCode(StatusCodes.Status404NotFound, new { resultado = new { } });
             }
-            var producto = await _context.Productos.FindAsync(id);
-            if (producto == null)
+            objProducto = _context.Productos.Include(c => c.IdEstadoNavigation).Include(c => c.UnidadCodigoNavigation).Where(p => p.Codigo == id).FirstOrDefault();
+
+            if (objProducto == null)
             {
-                return NotFound();
+                return StatusCode(StatusCodes.Status404NotFound, new { resultado = new { } });
             }
-
-            _context.Productos.Remove(producto);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return StatusCode(StatusCodes.Status200OK, new { message = "ok", resultado = objProducto });
+            
         }
-
-        private bool ProductoExists(int id)
-        {
-            return (_context.Productos?.Any(e => e.Codigo == id)).GetValueOrDefault();
-        }
+        
     }
 }

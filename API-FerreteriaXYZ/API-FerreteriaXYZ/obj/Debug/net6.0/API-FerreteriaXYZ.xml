@@ -4,5 +4,32 @@
         <name>API-FerreteriaXYZ</name>
     </assembly>
     <members>
+        <member name="M:API_FerreteriaXYZ.Controllers.ProductosController.CrearProducto(API_FerreteriaXYZ.Models.Producto)">
+             <summary>
+             Crear productos
+             </summary>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 POST /CreateProduct
+                 {
+                    "nombre": "Destornillador Estrella",
+                    "valorUnitario": 15000,
+                    "unidadCodigo": 2,
+                    "peso": 23,
+                    "volumenEmpaque": 23,
+                    "fechaCreacion": "2023-04-12T17:54:20.028Z",
+                    "idEstado": 1
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:API_FerreteriaXYZ.Controllers.ProductosController.GetAllProductos">
+            <summary>
+            Obtener la lista de Productos
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

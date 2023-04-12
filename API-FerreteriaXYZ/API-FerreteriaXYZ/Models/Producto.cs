@@ -1,6 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace API_FerreteriaXYZ.Models;
 
@@ -23,10 +24,11 @@ public partial class Producto
     public DateTime? FechaActualizacion { get; set; }
 
     public int IdEstado { get; set; }
-    [JsonIgnore]
-    public virtual EstadoProducto IdEstadoNavigation { get; set; } = null!;
+
+    
+    public virtual EstadoProducto? IdEstadoNavigation { get; set; }
     [JsonIgnore]
     public virtual ICollection<Inventario> Inventarios { get; set; } = new List<Inventario>();
-    [JsonIgnore]
-    public virtual Unidade UnidadCodigoNavigation { get; set; } = null!;
+    
+    public virtual Unidad? UnidadCodigoNavigation { get; set; }
 }

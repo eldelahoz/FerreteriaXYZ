@@ -4,14 +4,11 @@ using System.Text.Json.Serialization;
 
 namespace API_FerreteriaXYZ.Models;
 
-public partial class EstadoProducto
+public partial class Unidad
 {
-    public int Id { get; set; }
+    public int Codigo { get; set; }
 
-    public string? Descripcion { get; set; }
-
-    [JsonIgnore]
-    public virtual ICollection<Inventario> Inventarios { get; set; } = new List<Inventario>();
+    public string Descripcion { get; set; } = null!;
     [JsonIgnore]
     public virtual ICollection<Producto> Productos { get; set; } = new List<Producto>();
 }

@@ -1,9 +1,9 @@
-using API_FerreteriaXYZ.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Swashbuckle.AspNetCore;
-
+using API_FerreteriaXYZ.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +26,11 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<DbFerreteriaContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("FerreteriaDB")));
+
+builder.Services.AddControllers().AddJsonOptions(opt =>
+{
+    opt.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 var app = builder.Build();
 

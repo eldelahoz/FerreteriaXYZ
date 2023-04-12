@@ -31,9 +31,10 @@ public partial class DbFerreteriaContext : DbContext
 
     public virtual DbSet<TiposDocumento> TiposDocumentos { get; set; }
 
-    public virtual DbSet<Unidade> Unidades { get; set; }
+    public virtual DbSet<Unidad> Unidades { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -173,7 +174,8 @@ public partial class DbFerreteriaContext : DbContext
             entity.Property(e => e.ValorUnitario).HasColumnType("decimal(8, 2)");
             entity.Property(e => e.VolumenEmpaque).HasColumnType("decimal(5, 2)");
 
-            entity.HasOne(d => d.IdEstadoNavigation).WithMany(p => p.Productos)
+            entity.HasOne(d => d.IdEstadoNavigation)
+                .WithMany(p => p.Productos)
                 .HasForeignKey(d => d.IdEstado)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Productos_EstadoProductos");
@@ -197,7 +199,7 @@ public partial class DbFerreteriaContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<Unidade>(entity =>
+        modelBuilder.Entity<Unidad>(entity =>
         {
             entity.HasKey(e => e.Codigo);
 
