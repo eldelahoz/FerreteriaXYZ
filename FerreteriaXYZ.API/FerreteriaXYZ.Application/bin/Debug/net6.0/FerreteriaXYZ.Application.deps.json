@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FerreteriaXYZ.Application/1.0.0": {
+        "dependencies": {
+          "FerreteriaXYZ.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FerreteriaXYZ.Application.dll": {}
+        }
+      },
+      "FerreteriaXYZ.Domain/1.0.0": {
+        "runtime": {
+          "FerreteriaXYZ.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FerreteriaXYZ.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FerreteriaXYZ.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

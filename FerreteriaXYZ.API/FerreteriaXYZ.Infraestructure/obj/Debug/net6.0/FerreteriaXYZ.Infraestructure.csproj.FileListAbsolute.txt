@@ -1,0 +1,17 @@
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Infraestructure.deps.json
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Infraestructure.runtimeconfig.json
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Infraestructure.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Infraestructure.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.csproj.AssemblyReference.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.AssemblyInfoInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.AssemblyInfo.cs
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.csproj.CoreCompileInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\refint\FerreteriaXYZ.Infraestructure.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.genruntimeconfig.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\ref\FerreteriaXYZ.Infraestructure.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Domain.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\bin\Debug\net6.0\FerreteriaXYZ.Domain.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Infraestructure\obj\Debug\net6.0\FerreteriaXYZ.Infraestructure.csproj.CopyComplete

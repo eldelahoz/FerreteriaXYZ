@@ -1,0 +1,15 @@
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.csproj.AssemblyReference.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.AssemblyInfoInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.AssemblyInfo.cs
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.csproj.CoreCompileInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\bin\Debug\net6.0\FerreteriaXYZ.Application.deps.json
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\bin\Debug\net6.0\FerreteriaXYZ.Application.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\bin\Debug\net6.0\FerreteriaXYZ.Application.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\bin\Debug\net6.0\FerreteriaXYZ.Domain.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\bin\Debug\net6.0\FerreteriaXYZ.Domain.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.csproj.CopyComplete
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\refint\FerreteriaXYZ.Application.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\FerreteriaXYZ.Application.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Application\obj\Debug\net6.0\ref\FerreteriaXYZ.Application.dll

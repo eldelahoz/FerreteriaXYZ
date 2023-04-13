@@ -1,0 +1,12 @@
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\bin\Debug\net6.0\FerreteriaXYZ.Domain.deps.json
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\bin\Debug\net6.0\FerreteriaXYZ.Domain.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\bin\Debug\net6.0\FerreteriaXYZ.Domain.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.csproj.AssemblyReference.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.AssemblyInfoInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.AssemblyInfo.cs
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.csproj.CoreCompileInputs.cache
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\refint\FerreteriaXYZ.Domain.dll
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\FerreteriaXYZ.Domain.pdb
+D:\Users\DelaHoz\Documents\Visual Studio 2022\Course\FerreteriaXYZ.API\FerreteriaXYZ.Domain\obj\Debug\net6.0\ref\FerreteriaXYZ.Domain.dll
