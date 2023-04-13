@@ -10,4 +10,4 @@ services:
       SA_PASSWORD: "FerreteriaXYZ*"
       MSSQL_PID: Express
     volumes:
-      - ./db/ferreteria-data:/var/opt/mssql
+      - ../db/ferreteria-data:/var/opt/mssql
