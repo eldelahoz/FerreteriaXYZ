@@ -11,6 +11,16 @@ Para esto se emplea:
 
 ### Primeros pasos
 
+#### Creación de Servidor en contendor
+
+Para la creación del servidor de la base de datos usada es Sql Server 2019 si de igual manera ya se tiene un servidor se puede simplemente ejecutar el Script [FerreteriaDB.sql](https://github.com/eldelahoz/FerreteriaXYZ/blob/main/FerreteriaDB.sql)
+
+En caso tal de que no se tenga el servidor podemos ejecutar el siguiente comando para la creación del servidor (Entorno Linux)
+
+```
+docker-compose up -d
+```
+
 ## Enlgish:
 
 ## Getting Started
