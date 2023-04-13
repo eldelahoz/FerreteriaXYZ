@@ -1,34 +1,35 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using FerreteriaXYZ.Application.Services;
+﻿using FerreteriaXYZ.Application.Services;
+using FerreteriaXYZ.Domain.Entities;
 using FerreteriaXYZ.Infraestructure.Contextos;
 using FerreteriaXYZ.Infraestructure.Repositorios;
-using FerreteriaXYZ.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FerreteriaXYZ.API.Controllers
 {
-    [Tags("Administrar Productos")]
+    [Tags("Administrar Clientes")]
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductoController : ControllerBase
+    public class ClienteController : ControllerBase
     {
-        ProductoServicio CrearServicio()
+        ClienteServicio CrearServicio()
         {
             DbFerreteriaContext db = new DbFerreteriaContext();
-            ProductoRepositorio repo = new ProductoRepositorio(db);
-            ProductoServicio servicio = new ProductoServicio(repo);
+            ClienteRepositorio repo = new ClienteRepositorio(db);
+            ClienteServicio servicio = new ClienteServicio(repo);
             return servicio;
         }
-        // GET: api/<ProductoController>
+
+        // GET: api/<ClienteController>
         [HttpGet]
-        public ActionResult<List<Producto>> Get()
+        public ActionResult<List<Cliente>> Get()
         {
             var servicio = CrearServicio();
             return Ok(servicio.GetAll());
         }
 
-        // GET api/<ProductoController>/5
+        // GET api/<ClienteController>/5
         [HttpGet("{id}")]
         public ActionResult<Producto> Get(int id)
         {
@@ -36,32 +37,32 @@ namespace FerreteriaXYZ.API.Controllers
             return Ok(servicio.SeleccionarID(id));
         }
 
-        // POST api/<ProductoController>
+        // POST api/<ClienteController>
         [HttpPost]
-        public ActionResult Post([FromBody] Producto producto)
+        public ActionResult Post([FromBody] Cliente cliente)
         {
             var servicio = CrearServicio();
-            servicio.Agregar(producto);
-            return Ok("Producto agregado!");
+            servicio.Agregar(cliente);
+            return Ok("Cliente agregado!");
         }
 
-        // PUT api/<ProductoController>/5
+        // PUT api/<ClienteController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Producto producto)
+        public ActionResult Put(int id, [FromBody] Cliente cliente)
         {
             var servicio = CrearServicio();
-            producto.Codigo = id;
-            servicio.Editar(producto);
-            return Ok("Producto editado!");
+            cliente.NumeroDocumento = id.ToString();
+            servicio.Editar(cliente);
+            return Ok("Cliente editado!");
         }
 
-        // DELETE api/<ProductoController>/5
+        // DELETE api/<ClienteController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
             var servicio = CrearServicio();
             servicio.Eliminar(id);
-            return Ok("Producto Eliminado");
+            return Ok("Cliente Eliminado");
         }
     }
 }

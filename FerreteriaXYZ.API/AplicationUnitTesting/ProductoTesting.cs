@@ -19,5 +19,8 @@ namespace AplicationUnitTesting
 
             Assert.IsType<OkObjectResult>(result);
         }
+
+        [Fact]
+        public void Get_() { }
     }
 }
